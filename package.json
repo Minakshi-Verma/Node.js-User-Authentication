@@ -1,10 +1,11 @@
 {
   "name": "Node.js-User-Authentication",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project Dependancies/commands:\r 1- npm init -y // to get basic package.json\r 2- npm i express //for express\r 3- npm i bcrypt // this will allow us to all our cryptography\r 4- npm i -D nodemon // nodemon to automatically refresh our server(dont forget to change the script in package.json)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon index.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/Minakshi-Verma/Node.js-User-Authentication/issues"
   },
-  "homepage": "https://github.com/Minakshi-Verma/Node.js-User-Authentication#readme"
+  "homepage": "https://github.com/Minakshi-Verma/Node.js-User-Authentication#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "core-util-is": "^1.0.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
